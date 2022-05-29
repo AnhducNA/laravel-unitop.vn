@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 200);
             $table -> text('content');
+            // unsigned  chỉ lưu số dương
             $table->unsignedBigInteger('price');
             $table->unsignedBigInteger('product_cat_id');
             $table->unsignedBigInteger('user_id');
